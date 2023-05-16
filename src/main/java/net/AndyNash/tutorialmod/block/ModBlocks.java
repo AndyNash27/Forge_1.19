@@ -1,6 +1,7 @@
 package net.AndyNash.tutorialmod.block;
 
 import net.AndyNash.tutorialmod.TutorialMod;
+import net.AndyNash.tutorialmod.block.custom.JumpyBlock;
 import net.AndyNash.tutorialmod.item.ModCreativeModeTab;
 import net.AndyNash.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -23,6 +24,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> AMETHYST_BLOCK = registerBlock("amethyst_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
