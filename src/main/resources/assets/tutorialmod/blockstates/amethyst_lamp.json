@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "tutorialmod:block/amethyst_lamp_off" },
+    "lit=false": { "model": "tutorialmod:block/amethyst_lamp_on" }
+  }
+}
