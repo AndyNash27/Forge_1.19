@@ -2,6 +2,7 @@ package net.AndyNash.tutorialmod.block;
 
 import net.AndyNash.tutorialmod.TutorialMod;
 import net.AndyNash.tutorialmod.block.custom.AmethystLampBlock;
+import net.AndyNash.tutorialmod.block.custom.BlueberryCropBlock;
 import net.AndyNash.tutorialmod.block.custom.JumpyBlock;
 import net.AndyNash.tutorialmod.item.ModCreativeModeTab;
 import net.AndyNash.tutorialmod.item.ModItems;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -35,6 +37,9 @@ public class ModBlocks {
             () -> new AmethystLampBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(AmethystLampBlock.LIT) ? 0 : 15)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
+            () -> new BlueberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

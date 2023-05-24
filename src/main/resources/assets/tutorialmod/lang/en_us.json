@@ -1,10 +1,15 @@
 {
   "item.tutorialmod.amethyst": "Amethyst",
   "item.tutorialmod.eight_ball": "Eight Ball",
+  "item.tutorialmod.blueberry": "Blueberry",
+  "item.tutorialmod.blueberry_seeds": "Blueberry Seeds",
 
   "block.tutorialmod.amethyst_block": "Block of Amethyst",
   "block.tutorialmod.jumpy_block": "Jumpy Block",
   "block.tutorialmod.amethyst_lamp": "Amethyst Lamp",
+  "block.tutorialmod.blueberry_crop": "Blueberry Crop",
 
-  "itemGroup.tutorialtab": "Tutorial Tab"
+  "itemGroup.tutorialtab": "Tutorial Tab",
+
+  "entity.minecraft.villager.tutorialmod.jumpy_master": "jumpy Master"
 }
