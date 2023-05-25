@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.AndyNash.tutorialmod.block.ModBlocks;
 import net.AndyNash.tutorialmod.block.ModBlocks;
 import net.AndyNash.tutorialmod.item.ModItems;
+import net.AndyNash.tutorialmod.painting.ModPaintings;
 import net.AndyNash.tutorialmod.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -30,6 +31,8 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModVillagers.register(modEventBus);
+
+        ModPaintings.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
