@@ -6,6 +6,8 @@ import net.AndyNash.tutorialmod.block.ModBlocks;
 import net.AndyNash.tutorialmod.item.ModItems;
 import net.AndyNash.tutorialmod.painting.ModPaintings;
 import net.AndyNash.tutorialmod.villager.ModVillagers;
+import net.AndyNash.tutorialmod.world.feature.ModConfiguredFeatures;
+import net.AndyNash.tutorialmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +35,9 @@ public class TutorialMod {
         ModVillagers.register(modEventBus);
 
         ModPaintings.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
