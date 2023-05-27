@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.AndyNash.tutorialmod.block.ModBlocks;
 import net.AndyNash.tutorialmod.block.ModBlocks;
 import net.AndyNash.tutorialmod.item.ModItems;
+import net.AndyNash.tutorialmod.networking.ModMessages;
 import net.AndyNash.tutorialmod.painting.ModPaintings;
 import net.AndyNash.tutorialmod.villager.ModVillagers;
 import net.AndyNash.tutorialmod.world.feature.ModConfiguredFeatures;
@@ -48,6 +49,8 @@ public class TutorialMod {
         event.enqueueWork(() -> {
                 ModVillagers.registerPOIs();
         });
+
+        ModMessages.register();
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

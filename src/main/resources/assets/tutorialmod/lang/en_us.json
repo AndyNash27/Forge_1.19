@@ -18,5 +18,11 @@
 
   "itemGroup.tutorialtab": "Tutorial Tab",
 
-  "entity.minecraft.villager.tutorialmod.jumpy_master": "jumpy Master"
+  "entity.minecraft.villager.tutorialmod.jumpy_master": "jumpy Master",
+
+  "key.category.tutorialmod.tutorial": "Tutorial Mod",
+  "key.tutorialmod.drink_water": "Drink Water",
+
+  "message.tutorialmod.drink_water": "Drinking Water",
+  "message.tutorialmod.no_water": "No Water Nearby"
 }
